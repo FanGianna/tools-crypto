@@ -1,6 +1,6 @@
 {
   "name": "tools-crypto",
-  "version": "0.0.5",
+  "version": "1.0.3",
   "description": "crypto board",
   "engines": {
     "node": ">=6.11.3"
@@ -12,10 +12,10 @@
     "dev": "browserify agent.js -o public/js/tmp.js && uglifyjs public/js/tmp.js -b -m -o public/js/abv-node.0.0.6.js"
   },
   "dependencies": {
-    "my-crypto-server": "^1.0.0",
+    "tools-crypto-server": "^1.0.0",
     "my-crypto-socket": "^1.0.0",
     "tools-crypto-ts": "^1.0.0",
-    "abv-vfs": "0.0.5",
+    "tools-vfs": "^1.0.0",
     "ws": "^6.1.0"
   },
   "devDependencies": {
