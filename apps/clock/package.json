@@ -1,0 +1,40 @@
+{
+  "name": "clock",
+  "version": "0.0.1",
+  "description": "Clock app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "tools-agent": "file:../tools-agent",
+    "tools-events": "file:../tools-events",
+    "tools-node": "file:../tools-node",
+    "tools-spa": "file:../tools-spa",
+    "tools-ts": "file:../tools-ts",
+    "tools-vfs": "file:../tools-vfs",
+    "ws": "^5.1.1"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^3.0.4",
+    "utf-8-validate": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FanGianna/tools-crypto.git"
+  },
+  "keywords": [
+    "node",
+    "toolsos",
+    "websocket",
+    "tools"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FanGianna/tools-crypto/issues"
+  },
+  "homepage": "https://github.com/FanGianna/tools-crypto#readme",
+  "env": {
+    "PORT": "80"
+  }
+}

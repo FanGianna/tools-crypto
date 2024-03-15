@@ -1,0 +1,43 @@
+{
+  "name": "tools-crypto",
+  "version": "0.0.5",
+  "description": "crypto board",
+  "engines": {
+    "node": ">=6.11.3"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dist": "browserify agent.js -o public/js/tmp.js && uglifyjs public/js/tmp.js public/js/abvos.js -c -m -o public/js/abvos.0.0.6.js",
+    "dev": "browserify agent.js -o public/js/tmp.js && uglifyjs public/js/tmp.js -b -m -o public/js/abv-node.0.0.6.js"
+  },
+  "dependencies": {
+    "my-crypto-server": "^1.0.0",
+    "my-crypto-socket": "^1.0.0",
+    "tools-crypto-ts": "^1.0.0",
+    "abv-vfs": "0.0.5",
+    "ws": "^6.1.0"
+  },
+  "devDependencies": {
+    "crypto-agent": "file:../crypto-agent",
+    "browserify": "latest",
+    "uglify-es": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FanGianna/tools-crypto"
+  },
+  "keywords": [
+    "node",
+    "abvos",
+    "websocket"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FanGianna/tools-crypto/issues"
+  },
+  "homepage": "https://github.com/FanGianna/tools-crypto#readme",
+  "env": {
+    "PORT": "80"
+  }
+}
